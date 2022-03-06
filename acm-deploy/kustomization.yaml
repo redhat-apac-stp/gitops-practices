@@ -1,0 +1,7 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - 01-open-cluster-management-ns.yaml
+  - 02-operatorgroup.yaml
+  - 03-acm-operator-sub.yaml
+  - 04-multiclusterhub.yaml
