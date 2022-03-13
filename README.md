@@ -3,7 +3,23 @@
 A Repo for placing recommended GitOps Practices as followed and experienced by APAC STP Team. 
 
 
+# Installing Openshift-GitOps Operator
 
+```
+oc apply -f https://raw.githubusercontent.com/redhat-apac-stp/gitops-practices/main/openshift-gitops-operator-sub.yaml
+```
+
+
+# Creating ArgoCD Instance
+```
+https://raw.githubusercontent.com/redhat-apac-stp/gitops-practices/main/openshift-gitops-argocd-instance.yaml
+```
+
+# Automated Install via CLI
+
+```
+curl -s https://raw.githubusercontent.com/redhat-apac-stp/gitops-practices/main/init-openshift-gitops.sh | bash
+```
 
 # Known Issues
 
