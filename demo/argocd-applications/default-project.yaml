@@ -2,14 +2,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: cluster-proxy
+  name: default-project
   namespace: openshift-gitops
 spec:
   project: infra
   source:
     repoURL: https://github.com/redhat-apac-stp/gitops-practices.git
     targetRevision: main
-    path: demo/yamls/infra/cluster-proxy
+    path: demo/yamls/infra/default-project
   #syncPolicy:
     #automated: {}
       #selfHeal: true

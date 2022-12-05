@@ -1,0 +1,41 @@
+---
+apiVersion: template.openshift.io/v1
+kind: Template
+metadata:
+  name: project-request
+  namespace: openshift-config
+objects:
+- apiVersion: project.openshift.io/v1
+  kind: Project
+  metadata:
+    annotations:
+      openshift.io/description: ${PROJECT_DESCRIPTION}
+      openshift.io/display-name: ${PROJECT_DISPLAYNAME}
+      openshift.io/requester: ${PROJECT_REQUESTING_USER}
+    name: ${PROJECT_NAME}-from-template
+- apiVersion: v1
+  kind: LimitRange
+  metadata:
+    name: ${PROJECT_NAME}-resource-limits
+  spec:
+    limits: 
+    - max:
+        cpu: "1000m"
+        memory: "4Gi"
+      type: Pod
+    - default:
+        cpu: "400m"
+        memory: "768Mi"
+      defaultRequest:
+        cpu: "50m"
+        memory: "256Mi"
+      max:
+        cpu: "1000m"
+        memory: "4Gi"
+      type: Container
+parameters:
+- name: PROJECT_NAME
+- name: PROJECT_DISPLAYNAME
+- name: PROJECT_DESCRIPTION
+- name: PROJECT_ADMIN_USER
+- name: PROJECT_REQUESTING_USER
