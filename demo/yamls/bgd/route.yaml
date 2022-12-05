@@ -8,15 +8,10 @@ metadata:
   name: bgd
   namespace: bgd
 spec:
-  host: "bgd.apps.sia.stp-lab.org"
+  host: "bgd.apps.westpac.stp-lab.org"
   port:
     targetPort: 8080
   to:
     kind: Service
     name: bgd
     weight: 100
-status:
-  ingress:
-  - conditions:
-    - status: "True"
-      type: Admitted
