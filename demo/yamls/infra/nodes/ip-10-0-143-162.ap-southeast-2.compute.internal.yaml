@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Node
+metadata:
+  labels:
+    beta.kubernetes.io/arch: amd64
+    beta.kubernetes.io/instance-type: m6i.xlarge
+    beta.kubernetes.io/os: linux
+    failure-domain.beta.kubernetes.io/region: ap-southeast-2
+    failure-domain.beta.kubernetes.io/zone: ap-southeast-2a
+    kubernetes.io/arch: amd64
+    kubernetes.io/hostname: ip-10-0-143-162.ap-southeast-2.compute.internal
+    kubernetes.io/os: linux
+    node-role.kubernetes.io/worker: ""
+    node-role.kubernetes.io/infra: ""
+    node.kubernetes.io/instance-type: m6i.xlarge
+    node.openshift.io/os_id: rhcos
+    topology.ebs.csi.aws.com/zone: ap-southeast-2a
+    topology.kubernetes.io/region: ap-southeast-2
+    topology.kubernetes.io/zone: ap-southeast-2a
+  name: ip-10-0-143-162.ap-southeast-2.compute.internal
