@@ -8,7 +8,7 @@ metadata:
   name: bgd
   namespace: bgd
 spec:
-  host: "bgd.apps.westpac.stp-lab.org"
+  host: "bgd.apps.westpac-labs.stp-lab.org"
   port:
     targetPort: 8080
   to:
