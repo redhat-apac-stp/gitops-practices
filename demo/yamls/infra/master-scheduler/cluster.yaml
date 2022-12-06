@@ -4,6 +4,6 @@ metadata:
   generation: 1
   name: cluster
 spec:
-  mastersSchedulable: true
+  mastersSchedulable: false
   policy:
     name: ""

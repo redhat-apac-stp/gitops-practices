@@ -10,8 +10,8 @@ spec:
     repoURL: https://github.com/redhat-apac-stp/gitops-practices.git
     targetRevision: main
     path: demo/yamls/infra/nodes
-  #syncPolicy:
-    #automated: {}
+  syncPolicy:
+    automated: {}
       #selfHeal: true
       #prune: true
   destination: 

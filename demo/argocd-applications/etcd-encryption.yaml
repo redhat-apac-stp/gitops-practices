@@ -10,8 +10,8 @@ spec:
     repoURL: https://github.com/redhat-apac-stp/gitops-practices.git
     targetRevision: main
     path: demo/kustomize/overlays/non-prod/etcd-encryption
-  #syncPolicy:
-    #automated: {}
+  syncPolicy:
+    automated: {}
       #selfHeal: true
       #prune: true
   destination: 

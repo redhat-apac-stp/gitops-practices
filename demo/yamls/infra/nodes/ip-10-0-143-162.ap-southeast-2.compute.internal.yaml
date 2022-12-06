@@ -11,7 +11,6 @@ metadata:
     kubernetes.io/hostname: ip-10-0-143-162.ap-southeast-2.compute.internal
     kubernetes.io/os: linux
     node-role.kubernetes.io/worker: ""
-    node-role.kubernetes.io/infra: ""
     node.kubernetes.io/instance-type: m6i.xlarge
     node.openshift.io/os_id: rhcos
     topology.ebs.csi.aws.com/zone: ap-southeast-2a
