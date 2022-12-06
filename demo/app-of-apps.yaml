@@ -6,7 +6,7 @@ metadata:
 spec:
   project: infra
   source:
-    repoURL: ttps://github.com/redhat-apac-stp/gitops-practices.git
+    repoURL: https://github.com/redhat-apac-stp/gitops-practices.git
     targetRevision: main
     path: demo/argocd-applications
   syncPolicy:
