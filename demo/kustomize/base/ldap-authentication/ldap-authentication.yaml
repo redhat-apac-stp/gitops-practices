@@ -1,0 +1,23 @@
+apiVersion: config.openshift.io/v1
+kind: OAuth
+metadata:
+  name: cluster
+spec:
+  identityProviders:
+    - ldap:
+        attributes:
+          id:
+            - uidNumber
+          name:
+            - cn
+          preferredUsername:
+            - cn
+        bindDN: CN=admin,DC=stp-lab,DC=org
+        bindPassword:
+          name: ldap-secret
+        insecure: true
+        url: >-
+          ldap://3.26.31.102:389/ou=users,dc=stp-lab,dc=org?cn
+      mappingMethod: claim
+      name: STPLab-Dev-AD
+      type: LDAP
