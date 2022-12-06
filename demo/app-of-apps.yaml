@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: app-of-apps
+  namespace: openshift-gitops
+spec:
+  project: infra
+  source:
+    repoURL: ttps://github.com/redhat-apac-stp/gitops-practices.git
+    targetRevision: main
+    path: demo/argocd-applications
+  syncPolicy:
+    automated: {}
+  destination: 
+    name: in-cluster
