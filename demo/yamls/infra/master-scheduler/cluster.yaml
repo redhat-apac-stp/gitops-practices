@@ -1,7 +1,6 @@
 apiVersion: config.openshift.io/v1
 kind: Scheduler
 metadata:
-  generation: 1
   name: cluster
 spec:
   mastersSchedulable: false
