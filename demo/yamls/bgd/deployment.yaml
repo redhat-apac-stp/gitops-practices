@@ -16,11 +16,11 @@ spec:
   template:
     metadata:
       creationTimestamp: null
-      labelxs:
+      labels:
         app: bgd
     spec:
       containers:
-      - image: quay.io/redhatworkshops/bgd:latest
+      - image: quay.io/redhatworkshops/bgd:1.5.6
         name: bgd
         env:
         - name: COLOR
