@@ -16,7 +16,7 @@ spec:
   template:
     metadata:
       creationTimestamp: null
-      labels:
+      labelxs:
         app: bgd
     spec:
       containers:
