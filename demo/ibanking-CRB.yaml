@@ -1,0 +1,19 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  annotations:
+    argocds.argoproj.io/name: ibanking
+    argocds.argoproj.io/namespace: ibanking
+  labels:
+    app.kubernetes.io/managed-by: ibanking
+    app.kubernetes.io/name: argocd-application-controller
+    app.kubernetes.io/part-of: argocd
+  name: ibanking-ibanking-argocd-application-controller
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: ibanking-ibanking-argocd-application-controller
+subjects:
+- kind: ServiceAccount
+  name: ibanking-argocd-application-controller
+  namespace: ibanking
