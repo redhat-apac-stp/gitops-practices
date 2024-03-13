@@ -1,0 +1,7 @@
+apiVersion: apps.open-cluster-management.io/v1alpha1
+kind: MulticlusterApplicationSetReport
+metadata:
+  labels:
+    apps.open-cluster-management.io/hosting-applicationset: openshift-gitops.guestbook-allclusters-app-set
+  name: guestbook-allclusters-app-set
+  namespace: openshift-gitops

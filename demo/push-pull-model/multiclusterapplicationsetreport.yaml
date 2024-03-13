@@ -1,0 +1,7 @@
+apiVersion: apps.open-cluster-management.io/v1alpha1
+kind: MulticlusterApplicationSetReport
+metadata:
+  labels:
+    apps.open-cluster-management.io/hosting-applicationset: openshift-gitops.helloworld-allclusters-app-set
+  name: helloworld-allclusters-app-set
+  namespace: openshift-gitops
