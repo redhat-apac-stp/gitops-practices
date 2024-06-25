@@ -24,6 +24,6 @@ spec:
         name: bgd
         env:
         - name: COLOR
-          value: "red"
+          value: "green"
         resources: {}
 ---
